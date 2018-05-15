@@ -1,7 +1,7 @@
 object FormMouA: TFormMouA
-  Left = 613
+  Left = 542
   Height = 133
-  Top = 238
+  Top = 281
   Width = 326
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -9,6 +9,7 @@ object FormMouA: TFormMouA
   ClientHeight = 133
   ClientWidth = 326
   Color = clSilver
+  OnCreate = FormCreate
   LCLVersion = '1.8.2.0'
   object RadioButtonA: TRadioButton
     Cursor = crHandPoint

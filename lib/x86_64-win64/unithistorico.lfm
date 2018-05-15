@@ -1,8 +1,8 @@
 object FormHistorico: TFormHistorico
-  Left = 367
+  Left = 444
   Height = 227
-  Top = 217
-  Width = 922
+  Top = 215
+  Width = 512
   HorzScrollBar.Page = 520
   HorzScrollBar.Range = 520
   VertScrollBar.Page = 217
@@ -10,8 +10,10 @@ object FormHistorico: TFormHistorico
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Histórico'
+  ChildSizing.ShrinkHorizontal = crsScaleChilds
+  ChildSizing.ShrinkVertical = crsScaleChilds
   ClientHeight = 227
-  ClientWidth = 922
+  ClientWidth = 512
   Color = clSilver
   Font.CharSet = ANSI_CHARSET
   Font.Height = -16
@@ -21,7 +23,7 @@ object FormHistorico: TFormHistorico
   LCLVersion = '1.8.2.0'
   object ButtonLimp: TButton
     Cursor = crHandPoint
-    Left = 829
+    Left = 421
     Height = 25
     Top = 192
     Width = 75
@@ -39,19 +41,25 @@ object FormHistorico: TFormHistorico
     Left = 16
     Height = 168
     Top = 16
-    Width = 888
+    Width = 480
     AlternateColor = 15132390
     AutoEdit = False
+    BorderSpacing.CellAlignHorizontal = ccaLeftTop
+    BorderSpacing.CellAlignVertical = ccaLeftTop
     DefaultColWidth = 68
     FixedCols = 0
+    HeaderHotZones = [gzFixedCols, gzInvalid]
+    ParentShowHint = False
     RowCount = 3
+    ShowHint = True
     TabOrder = 1
     TitleFont.CharSet = ANSI_CHARSET
     TitleFont.Height = -16
     TitleFont.Name = 'Calibri'
     TitleFont.Pitch = fpVariable
     TitleFont.Quality = fqDraft
-    KeyOptions = [keyEdit]
+    KeyOptions = [keyEdit, keyAdd]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRelaxedRowSelect, goSmoothScroll, goScrollKeepVisible, goCellHints, goTruncCellHints, goCellEllipsis]
     Strings.Strings = (
       ''
       ''
@@ -62,7 +70,7 @@ object FormHistorico: TFormHistorico
     )
     ColWidths = (
       68
-      816
+      408
     )
   end
 end

@@ -10,6 +10,8 @@ object FormHistorico: TFormHistorico
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Histórico'
+  ChildSizing.ShrinkHorizontal = crsScaleChilds
+  ChildSizing.ShrinkVertical = crsScaleChilds
   ClientHeight = 227
   ClientWidth = 512
   Color = clSilver
@@ -42,16 +44,22 @@ object FormHistorico: TFormHistorico
     Width = 480
     AlternateColor = 15132390
     AutoEdit = False
+    BorderSpacing.CellAlignHorizontal = ccaLeftTop
+    BorderSpacing.CellAlignVertical = ccaLeftTop
     DefaultColWidth = 68
     FixedCols = 0
+    HeaderHotZones = [gzFixedCols, gzInvalid]
+    ParentShowHint = False
     RowCount = 3
+    ShowHint = True
     TabOrder = 1
     TitleFont.CharSet = ANSI_CHARSET
     TitleFont.Height = -16
     TitleFont.Name = 'Calibri'
     TitleFont.Pitch = fpVariable
     TitleFont.Quality = fqDraft
-    KeyOptions = [keyEdit]
+    KeyOptions = [keyEdit, keyAdd]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRelaxedRowSelect, goSmoothScroll, goScrollKeepVisible, goCellHints, goTruncCellHints, goCellEllipsis]
     Strings.Strings = (
       ''
       ''
